@@ -13,8 +13,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout your source code from your version control system
-                checkout scm
+                git 'https://github.com/pradiptakayal/.netcore.git'
+                
             }
         }
         
